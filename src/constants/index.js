@@ -85,7 +85,8 @@ import {
       status:{
         name:"Published",
         color:"blue-text-gradient"
-      }
+      },
+      link:"https://varun-sangai.github.io/weather/"
     },
     {
       name: "E-commerce",
@@ -96,7 +97,8 @@ import {
       status:{
         name:"On Going",
         color:"green-text-gradient"
-      }
+      },
+      link:""
     }
   ];
   

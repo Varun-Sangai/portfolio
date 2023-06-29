@@ -15,6 +15,7 @@ const ProjectCard = ({
   status,
   image,
   source_code_link,
+  link
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -56,8 +57,10 @@ const ProjectCard = ({
             <p
               key={`${name}-${status.name}`}
               className={`text-[14px] ${status.color}`}
+              style={{'cursor':`${link===""?'':'pointer'}`}}
             >
-              {status.name}
+             {link!=="" && <a href={link} target="_blank"> {status.name}</a>}
+             {link==="" && status.name}
             </p>
         </div>
       </Tilt>
